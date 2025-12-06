@@ -1,0 +1,188 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: rgb(0, 0, 33);
+     color: white;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .left {
+     font-weight: 700;
+     font-size: 1.4rem;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: white;
+ }
+
+
+ nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 80px;
+     background-color: rgb(8, 8, 65);
+     /* padding: 20px 50px; */
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ nav ul li {
+     list-style: none;
+     margin: 0 23px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: white;
+ }
+
+ nav ul li a:hover {
+     color: rgb(125, 125, 202);
+     font-size: 1.04rem;
+ }
+
+ main hr {
+     border: 0;
+     background: #6666d3;
+     height: 2px;
+     margin: 55px 110px;
+ }
+
+ .firstSection {
+     display: flex;
+     justify-content: space-around;
+     margin: 70px 0px;
+     align-items: center;
+ }
+
+ /* 
+        .firstSection > div {
+           max-width: 30%;
+        } */
+
+ .leftSection {
+     font-size: 2.3rem;
+ }
+
+ .leftSection .Buttons {
+     padding: 23px;
+ }
+
+ .leftSection .btn {
+     padding: 12px;
+     background-color: rgb(65 60 151);
+     ;
+     color: white;
+     border: 2px solid whitesmoke;
+     border-radius: 6px;
+     cursor: pointer;
+ }
+
+ .rightSection img {
+     width: 80%;
+ }
+
+ .purple {
+     color: rgb(143, 86, 197)
+ }
+
+ .text-gray {
+     color: gray;
+     font-size: 1rem;
+ }
+
+ #element {
+     color: rgb(125, 125, 202);
+ }
+
+ .secondsection {
+     margin: auto;
+     max-width: 80vw;
+     height: 700px;
+ }
+
+ .secondsection h1 {
+     font-size: 1.9rem;
+     /* margin-bottom: 40px; */
+ }
+
+ .secondsection .box {
+     background-color: white;
+     height: 2px;
+     width: 80vw;
+     margin: 56px 0px;
+     display: flex;
+ }
+
+ .secondsection .vertical {
+     height: 93px;
+     width: 1px;
+     background-color: white;
+     margin: 0px 112px;
+ }
+
+ .image-top {
+     width: 23px;
+     position: relative;
+     top: -32px;
+     left: -9px;
+ }
+
+
+ .vertical-title {
+     position: relative;
+     top: 75px;
+     width: 150px;
+
+ }
+
+ .vertical-desc {
+     position: relative;
+     top: 90px;
+     width: 150px;
+     color: gray;
+     font-size: 11px;
+ }
+
+ .vertical {
+     position: relative;
+     left: -112px;
+ }
+
+ footer {
+     background-color: #110f36;
+ }
+
+ .footer {
+     display: flex;
+     padding: 30px 122px;
+     justify-content: space-evenly;
+ }
+
+ footer ul {
+     list-style: none;
+ }
+
+ .footer>div {
+     width: 240px;
+ }
+
+ footer .footer-rights {
+     text-align: center;
+     color: gray;
+     font-size: 14px;
+     padding: 12px 0px;
+ }
+
+ .box a{
+    text-decoration: none;
+    color: white;
+ }

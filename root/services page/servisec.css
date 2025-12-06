@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(8, 8, 65);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(125, 125, 202);
+    font-size: 1.04rem;
+}
+
+header nav .left {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* Page Title */
+main {
+    padding: 50px 80px;
+    animation: fadeIn 1s ease forwards;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: rgb(143, 86, 197);
+    animation: slideDown 1s ease;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: gray;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.service-card {
+    background-color: rgb(8, 8, 65);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2);
+    transition: 0.4s;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(143, 86, 197, 0.7);
+}
+
+.service-card img {
+    width: 85px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: rgb(143, 86, 197);
+}
+
+.service-card p {
+    color: rgb(200, 200, 200);
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+}
+
+/* Footer */
+footer {
+    background-color: #110f36;
+    margin-top: 80px;
+}
+
+.footer {
+    display: flex;
+    padding: 30px 122px;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 240px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    padding: 12px 0px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

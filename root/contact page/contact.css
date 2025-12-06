@@ -1,0 +1,225 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: rgb(0, 0, 33);
+     color: white;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ /* ----------------- HEADER SAME AS HOME ---------------- */
+ .left {
+     font-weight: 700;
+     font-size: 1.4rem;
+ }
+
+ nav a{
+    color: white;
+    text-decoration: none;
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 80px;
+     background-color: rgb(8, 8, 65);
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ nav ul li {
+     list-style: none;
+     margin: 0 23px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: white;
+     transition: 0.2s ease-in-out;
+ }
+
+ nav ul li a:hover {
+     color: rgb(125, 125, 202);
+     font-size: 1.04rem;
+ }
+
+ /* ----------------- CONTACT CONTENT ---------------- */
+ .container {
+     max-width: 85vw;
+     margin: auto;
+     padding: 50px 0;
+ }
+
+ h1 {
+     text-align: center;
+     font-size: 2.3rem;
+     margin-bottom: 10px;
+ }
+
+ p.section-desc {
+     text-align: center;
+     color: gray;
+     margin-bottom: 50px;
+ }
+
+ .contact-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 40px;
+ }
+
+ /* Contact Info Cards */
+ .info-card {
+     background: rgb(16, 16, 50);
+     padding: 25px;
+     border-radius: 12px;
+     border: 1px solid rgb(60, 60, 120);
+     transition: 0.3s ease;
+ }
+
+ .info-card:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 0 20px rgba(125, 125, 255, 0.4);
+     border-color: rgb(125, 125, 255);
+ }
+
+ .info-card h3 {
+     margin-bottom: 10px;
+     font-size: 1.3rem;
+ }
+
+ .info-card p {
+     font-size: 0.95rem;
+     color: rgb(200, 200, 200);
+ }
+
+ /* Contact Form */
+ .contact-form {
+     background: rgb(16, 16, 50);
+     padding: 30px;
+     border-radius: 12px;
+     border: 1px solid rgb(60, 60, 120);
+     position: relative;
+ }
+
+ .contact-form label {
+     display: block;
+     margin-bottom: 6px;
+     font-weight: 500;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     width: 100%;
+     padding: 12px 15px;
+     margin-bottom: 20px;
+     border-radius: 6px;
+     border: 1px solid rgb(100, 100, 150);
+     background: rgb(0, 0, 33);
+     color: white;
+     font-size: 0.95rem;
+     transition: 0.3s;
+ }
+
+ .contact-form input:focus,
+ .contact-form textarea:focus {
+     border-color: rgb(125, 125, 255);
+     outline: none;
+     box-shadow: 0 0 8px rgba(125, 125, 255, 0.5);
+ }
+
+ .contact-form button {
+     padding: 12px 25px;
+     background: rgb(70, 70, 160);
+     color: white;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 1rem;
+     transition: 0.3s;
+ }
+
+ .contact-form button:hover {
+     background: rgb(125, 125, 255);
+ }
+
+ /* Snackbar / success message */
+ .snackbar {
+     visibility: hidden;
+     min-width: 250px;
+     background-color: rgb(30, 30, 90);
+     color: white;
+     text-align: center;
+     border-radius: 6px;
+     padding: 14px;
+     position: fixed;
+     z-index: 10;
+     left: 50%;
+     bottom: 30px;
+     font-size: 1rem;
+     transform: translateX(-50%);
+     box-shadow: 0 0 10px rgba(125, 125, 255, 0.7);
+ }
+
+ .snackbar.show {
+     visibility: visible;
+     animation: fadein 0.5s, fadeout 0.5s 3.0s;
+ }
+
+ @keyframes fadein {
+     from {
+         bottom: 0;
+         opacity: 0;
+     }
+
+     to {
+         bottom: 30px;
+         opacity: 1;
+     }
+ }
+
+ @keyframes fadeout {
+     from {
+         bottom: 30px;
+         opacity: 1;
+     }
+
+     to {
+         bottom: 0;
+         opacity: 0;
+     }
+ }
+
+ /* ----------------- FOOTER SAME AS HOME ---------------- */
+ footer {
+     background-color: #110f36;
+     margin-top: 50px;
+ }
+
+ .footer {
+     display: flex;
+     padding: 30px 122px;
+     justify-content: space-evenly;
+ }
+
+ footer ul {
+     list-style: none;
+ }
+
+ .footer>div {
+     width: 240px;
+ }
+
+ footer .footer-rights {
+     text-align: center;
+     color: gray;
+     font-size: 14px;
+     padding: 12px 0px;
+ }

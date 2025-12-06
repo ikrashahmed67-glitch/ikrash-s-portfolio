@@ -1,0 +1,135 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: rgb(0, 0, 33);
+     color: white;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 80px;
+     background-color: rgb(8, 8, 65);
+ }
+
+ .left {
+     font-weight: 700;
+     font-size: 1.4rem;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: white;
+ }
+
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ nav ul li {
+     list-style: none;
+     margin: 0 23px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: white;
+ }
+
+ nav ul li a:hover {
+     color: rgb(125, 125, 202);
+     font-size: 1.04rem;
+ }
+
+ .container {
+     width: 80vw;
+     margin: auto;
+     padding-top: 70px;
+     padding-bottom: 70px;
+ }
+
+ h1 {
+     font-size: 2.8rem;
+     margin-bottom: 20px;
+ }
+
+ h1 span {
+     color: rgb(143, 86, 197);
+ }
+
+ .about-box {
+     background: rgba(255, 255, 255, 0.05);
+     border: 1px solid rgba(255, 255, 255, 0.08);
+     padding: 30px;
+     border-radius: 12px;
+     margin-bottom: 40px;
+     transition: 0.3s;
+ }
+
+  #skills a{
+    text-decoration: none;
+    color: white;
+ }
+
+  .about-box:hover {
+     background: rgba(255, 255, 255, 0.1);
+ }
+
+ p {
+     line-height: 1.8;
+     font-size: 1.1rem;
+     opacity: 0.9;
+ }
+
+ .sub-title {
+     font-size: 1.9rem;
+     margin: 30px 0 15px 0;
+ }
+
+ .skills span {
+     display: inline-block;
+     margin: 7px;
+     padding: 10px 16px;
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 20px;
+     border: 1px solid rgba(255, 255, 255, 0.15);
+     font-size: 0.9rem;
+     transition: 0.3s;
+ }
+
+ .skills span:hover {
+     background: rgb(143, 86, 197);
+     transform: scale(1.05);
+ }
+
+ footer {
+     background-color: #110f36;
+ }
+
+ .footer {
+     display: flex;
+     padding: 30px 122px;
+     justify-content: space-evenly;
+ }
+
+ footer ul {
+     list-style: none;
+ }
+
+ .footer>div {
+     width: 240px;
+ }
+
+ footer .footer-rights {
+     text-align: center;
+     color: gray;
+     font-size: 14px;
+     padding: 12px 0px;
+ }
