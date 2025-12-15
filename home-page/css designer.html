@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSS Designer — In-depth Experience (2020–2022)</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f0c4c;
+            color: #fff;
+            padding: 36px;
+            line-height: 1.85
+        }
+
+        h1 {
+            font-size: 30px;
+            color: rgb(125, 125, 202);
+            margin-bottom: 18px
+        }
+
+        img {
+            width: 160px;
+            border-radius: 8px;
+            margin: 18px 0
+        }
+
+        .section {
+            margin-bottom: 20px
+        }
+
+        .back-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px;
+            border-radius: 8px;
+            margin: 25px 575px;
+            background-color: #324beda1;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Designer (2020–2022)</h1>
+    <img src="/assets/css designer.png" alt="CSS Designer">
+    <div class="section">
+        <p>From 2020 to 2022 my focus turned to visual systems, animations and design-to-code fidelity. As responsive
+            design matured, emphasis shifted to reusable design tokens, consistent spacing systems, dark/light themes,
+            and a component-first styling approach. My work aimed to bridge the gap between design intent and
+            implementation while keeping code scalable.</p>
+    </div>
+    <div class="section">
+        <h2>Core Work</h2>
+        <ul>
+            <li>Creating and maintaining a design token system for colors, spacing and typography to ensure consistency
+                across products.</li>
+            <li>Building accessible, responsive components (buttons, forms, cards) with clear API and shallow coupling
+                to business logic.</li>
+            <li>Implementing smooth micro-interactions and CSS-driven animations that enhance perceived quality without
+                harming performance.</li>
+            <li>Implementing themes (dark/light and high-contrast) and ensuring visual accessibility across contrast
+                ratios and font sizes.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Tools & Techniques</h2>
+        <p>I used modern CSS features: custom properties (CSS variables) for tokens, grid & flexbox for layouts, and
+            container queries where supported. I also worked with preprocessors and utility-based systems where
+            appropriate to speed up development, while keeping an eye on generated CSS size and runtime performance.</p>
+    </div>
+    <div class="section">
+        <h2>Performance & Accessibility</h2>
+        <p>Animations were implemented in ways that avoid layout thrashing (transform & opacity), and I used
+            prefers-reduced-motion to respect user preferences. All components were audited for contrast and keyboard
+            navigation to meet core accessibility standards.</p>
+    </div>
+    <div class="section">
+        <h2>Outcome</h2>
+        <p>The result was a cohesive visual language that allowed product teams to build interfaces faster with fewer
+            regressions. A small style system I helped build reduced CSS duplication and improved the speed of
+            implementing new screens by providing ready-to-use building blocks.</p>
+    </div>
+
+    <div class="back">
+        <a href="index.html"> <span class="back-btn">Go back</span> </a>
+    </div>
+</body>
+
+
+</html>

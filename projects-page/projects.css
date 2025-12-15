@@ -1,0 +1,183 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: rgb(0, 0, 33);
+     color: white;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ /* ----------------- HEADER SAME AS HOME ---------------- */
+ .left {
+     font-weight: 700;
+     font-size: 1.4rem;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: white;
+ }
+
+
+ nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 80px;
+     background-color: rgb(8, 8, 65);
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ nav ul li {
+     list-style: none;
+     margin: 0 23px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: white;
+     transition: 0.2s ease-in-out;
+ }
+
+ nav ul li a:hover {
+     color: rgb(125, 125, 202);
+     font-size: 1.04rem;
+ }
+
+ /* ----------------- PAGE CONTENT ---------------- */
+ .container {
+     max-width: 85vw;
+     margin: auto;
+     padding-top: 50px;
+     padding-bottom: 50px;
+ }
+
+ h1 {
+     text-align: center;
+     font-size: 2.3rem;
+ }
+
+ p.section-desc {
+     text-align: center;
+     color: gray;
+     margin-bottom: 40px;
+     margin-top: 10px;
+ }
+
+ /* Filter Buttons */
+ .filters {
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+     margin-bottom: 35px;
+     flex-wrap: wrap;
+ }
+
+ .filter-btn {
+     padding: 10px 20px;
+     background: rgb(70, 70, 160);
+     border-radius: 6px;
+     border: 1px solid rgb(120, 120, 255);
+     cursor: pointer;
+     color: white;
+     transition: 0.3s ease;
+ }
+
+ .filter-btn:hover,
+ .active-filter {
+     background: rgb(125, 125, 255);
+     transform: scale(1.05);
+ }
+
+ /* Projects Grid */
+ .projects-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 30px;
+ }
+
+ /* 3D Project Card */
+ .project-card {
+     background: rgb(16, 16, 50);
+     padding: 20px;
+     border-radius: 12px;
+     border: 1px solid rgb(60, 60, 120);
+     cursor: pointer;
+     transition: 0.35s ease;
+     perspective: 1000px;
+ }
+
+ .project-card:hover {
+     transform: rotateX(4deg) rotateY(6deg);
+     box-shadow: 0 0 20px rgba(120, 120, 255, 0.4);
+     border-color: rgb(125, 125, 255);
+ }
+
+ .project-card img {
+     width: 100%;
+     border-radius: 10px;
+     margin-bottom: 15px;
+ }
+
+ .project-card h2 {
+     font-size: 1.4rem;
+     margin-bottom: 8px;
+ }
+
+ .project-card p {
+     color: rgb(200, 200, 200);
+     font-size: 0.9rem;
+ }
+
+ /* View Button (Hidden until hover) */
+ .project-btn {
+     display: inline-block;
+     padding: 10px 16px;
+     background: rgb(70, 70, 160);
+     border-radius: 6px;
+     color: white;
+     text-decoration: none;
+     border: 1px solid white;
+     margin-top: 12px;
+     opacity: 0;
+     transform: translateY(10px);
+     transition: 0.3s ease;
+ }
+
+ .project-card:hover .project-btn {
+     opacity: 1;
+     transform: translateY(0px);
+ }
+
+ /* ----------------- FOOTER SAME AS HOME ---------------- */
+ footer {
+     background-color: #110f36;
+ }
+
+ .footer {
+     display: flex;
+     padding: 30px 122px;
+     justify-content: space-evenly;
+ }
+
+ footer ul {
+     list-style: none;
+ }
+
+ .footer>div {
+     width: 240px;
+ }
+
+ footer .footer-rights {
+     text-align: center;
+     color: gray;
+     font-size: 14px;
+     padding: 12px 0px;
+ }
